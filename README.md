@@ -106,6 +106,10 @@ This is the kind of output that supports decision-making in **product launches, 
 
 ## Visualization
 
+<p align="center">
+  <img src="img/ab_null_distribution.png" width="80%">
+</p>
+
 The project includes a Plotly-based visualization of the null distribution.
 
 The chart can show:
@@ -113,9 +117,11 @@ The chart can show:
 - the permutation-based null distribution
 - a KDE curve for a smoother view of the distribution
 - the observed delta as a reference line
-- an optional **CLT normal approximation** for comparison
+- an optional **Central Limit Theorem (CLT) normal approximation** for comparison
 
 This makes the analysis easier to communicate to non-technical stakeholders by showing both the observed result and the range of differences expected under the null hypothesis.
+
+The CLT allows us to approximate the $\Delta$ distribution by a normal distribution with a large sample size. Here we can see directly that this indeed happens since the KDE is very close to the CLT line and can be made as close as desired to it by increasing the number of resamples. This shows perfect agreement between the permutation test and the CLT.
 
 ## How to Run
 

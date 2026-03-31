@@ -109,7 +109,7 @@ class ABTest():
 			name='Permutation Null Dist',
 			marker_color='lightgray',
 			opacity=0.7,
-			nbinsx=100,
+			nbinsx=50,
 			marker_line=dict(width=1, color='gray')
 		))
 
